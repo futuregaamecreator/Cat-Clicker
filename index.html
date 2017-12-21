@@ -7,6 +7,7 @@
 </head>
 <body>
   <H1>Cat Clicker</H1>
+  <p> My Cat </p>
   <a id="cat1" href="#"><img src="img/cat.jpg"></a><br>
   <p>Number of clicks - </p>
   <p id="clicks"></p>
@@ -18,6 +19,18 @@
       count += 1;
       document.getElementById("clicks").innerHTML = count;
   }, false); </script>
+  <p>Your Cat </p>
+  <a id="cat2" href="#"><img src="img/cat2.jpg"></a><br>
+  <p>Number of clicks - </p>
+  <p id="clicks2"></p>
+  <script > count2 = 0;
+  var elem = document.getElementById('cat2');
+  console.log(elem);
+  elem.addEventListener('click', function() {
+      count2 += 1;
+      document.getElementById("clicks2").innerHTML = count2;
+  }, false); </script>
+
 
     <script src="js/jquery.min.js"></script>
     <script src="js/script.js"></script>
